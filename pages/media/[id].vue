@@ -7,4 +7,7 @@
 
 <script setup>
   const { id } = useRoute().params
+  useHead({
+    title: 'Новость'
+  })
 </script>

@@ -1,26 +1,10 @@
 <template>
   <div>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <NuxtLink to="/business">Бизнес</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/media">Медиацентр</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/about">О нас</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/contacts">Контакты</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/">Eng</NuxtLink>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <slot></slot>
+    <PartsHeader/>
+      <slot></slot>
+    <PartsFooter/>
   </div>
 </template>
+
+<script setup>
+</script>

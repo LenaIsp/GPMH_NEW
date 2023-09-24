@@ -1,5 +1,13 @@
 <template>
   <div>
-    <h2>Газпром-медиа - главная</h2>
+    <h2>Газпром-медиа - О нас</h2>
   </div>
 </template>
+
+<script setup>
+
+</script>
+
+<style lang="scss" scoped>
+
+</style>
