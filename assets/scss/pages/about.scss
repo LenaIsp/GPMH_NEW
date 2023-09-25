@@ -169,7 +169,7 @@
         height: em(22);
         @include asd-bg-crop;
         background-position: center right;
-        background-image: url(static/img/icons/long_arrow.svg);
+        background-image: url(/img/icons/long_arrow.svg);
         width: 100%;
 
         &-wrap {

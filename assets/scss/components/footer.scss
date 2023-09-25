@@ -74,15 +74,15 @@
     height: em(62);
 
     .invert & {
-        background-image: url(static/img/icons/logo_invert.svg);
+        background-image: url(/img/icons/logo_invert.svg);
     }
 }
 
 .b-footer_contacts_icon_ru {
-    background-image: url(static/img/icons/logo_ru_2.svg);
+    background-image: url(/img/icons/logo_ru_2.svg);
 }
 .b-footer_contacts_icon_en {
-    background-image: url(static/img/icons/logo_en_2.svg);
+    background-image: url(/img/icons/logo_en_2.svg);
 }
 
 .b-footer_links {

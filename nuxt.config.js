@@ -9,5 +9,49 @@ export default defineNuxtConfig({
         name: 'description', content: 'Газпром-Медиа Холдинг - официальный сайт',
       }]
     }
-  }
+  },
+  css: ['~/assets/scss/app.scss'],
+  modules: [
+    [
+      '@nuxtjs/i18n',
+      {
+        compilation: {
+          strictMessage: false,
+          escapeHtml: false,
+        },
+        locales: [
+          {
+            code: 'ru',
+            name: 'Рус',
+            dir: 'rtl',
+            iso: 'ru-Ru',
+            files: ['ru/common.json'],
+          },
+          {
+            code: 'en',
+            name: 'Eng',
+            dir: 'ltr',
+            iso: 'en-US',
+            files: ['en/common.json'],
+          },
+        ],
+        strategy: 'prefix',
+        lazy: true,
+        langDir: 'locales/',
+        defaultLocale: 'ru',
+      },
+    ],
+  ],
+
+  routeRules: {
+    '/ru': { prerender: true },
+    '/en': { prerender: true },
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+    },
+  },
+    
 })
